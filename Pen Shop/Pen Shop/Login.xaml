@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Pen_Shop.Login">
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <StackLayout>
+                <Label Text="PEN SHOP" HorizontalOptions="Center" Margin="0,20,0,5" FontSize="Title" FontAttributes="Bold"  />
+                <StackLayout Grid.Row="2">
+                    <Image Source="pencil.png" WidthRequest="300" HeightRequest="190" HorizontalOptions="Center" />
+                    <Label Text="USERNAME :" FontSize="Large" FontAttributes="Bold" Margin="20,0,30,0" TextColor="Black" />
+                    <Entry x:Name="Userlabel" Placeholder="Username" Keyboard="Email" Margin="20,0,0,0" FontSize="Large" TextColor="#FFFFFF" PlaceholderColor="#000000" />
+                    <Label Text="PASSWORD :" FontSize="Large" FontAttributes="Bold" Margin="20,0,30,40" TextColor="Black" />
+                    <Entry x:Name="Passlabel" Placeholder="Password" IsPassword="True" Margin="20,-50,0,-5" FontSize="Large" PlaceholderColor="#000000" TextColor="#FFFFFF" />
+                    <Button Text="LOGIN" x:Name="Loginbutton" BackgroundColor="#385485" AutomationProperties.IsInAccessibleTree="False" TextColor="#FFFFFF" FontSize="Large" 
+                            FlowDirection="MatchParent" FontAttributes="Bold" InputTransparent="False" Margin="70,20,70,0" Clicked="Loginbutton_clicked"  />
+                    <Button Text="REGISTER" x:Name="registerbutton" BackgroundColor="#FC2E5B" AutomationProperties.IsInAccessibleTree="False" TextColor="#FFFFFF" FontSize="Large" 
+                            FlowDirection="MatchParent" FontAttributes="Bold" InputTransparent="False" Margin="70,10,70,0" Clicked="registerbutton_clicked" />
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

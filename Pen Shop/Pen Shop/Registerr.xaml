@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Pen_Shop.Registerr">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="REGISTER" HorizontalOptions="Center" Margin="50,30" FontSize="30" FontAttributes="Bold" TextColor="Black" />
+                    <Label Text="USERNAME" FontSize="18" FontAttributes="Bold" Margin="30,0,0,0" TextColor="" />
+                    <Entry x:Name="enUsername" Placeholder="Username" Margin="30,0" FontSize="16" TextColor="" PlaceholderColor="#000000" />
+
+                    <Label Text="FIRSTNAME" FontSize="18" FontAttributes="Bold" Margin="30,0,0,0" TextColor="" />
+                    <Entry x:Name="enFirstname" Placeholder="Firstname" Margin="30,0" FontSize="16" TextColor="" PlaceholderColor="#000000" />
+
+                    <Label Text="LASTNAME" FontSize="18" FontAttributes="Bold" Margin="30,0,0,0" TextColor="" />
+                    <Entry x:Name="enLastname" Placeholder="Lastname" Margin="30,0" FontSize="16" TextColor="" PlaceholderColor="#000000" />
+
+                    <Label Text="PHONE" FontSize="18" FontAttributes="Bold" Margin="30,0,0,0" TextColor="" />
+                    <Entry x:Name="enPhone" Placeholder="Phone" Margin="30,0" FontSize="16" TextColor="" PlaceholderColor="#000000" />
+
+                    <Label Text="PASSWORD" FontSize="18" FontAttributes="Bold" Margin="30,5,0,0" TextColor="" />
+                    <Entry x:Name="enPassword" Placeholder="Password" Margin="30,0" FontSize="16" TextColor="" PlaceholderColor="#000000" />
+
+                    <Button Text="ENTER" Margin="40,10" BackgroundColor="#318DF3" TextColor="" FontSize="18" FontAttributes="Bold" Clicked="enmenubutton_clicked" />
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

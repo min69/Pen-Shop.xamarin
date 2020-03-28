@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Pen_Shop.Success">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <StackLayout>
+                <Label Text="SUCCESS!" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="50,100,50,10" TextColor="Black"/>
+                <Image Source="tick.png" WidthRequest="300" HeightRequest="190" HorizontalOptions="Center" Margin="50,5,50,50" />
+                <Button Text="MENU" Clicked="meenuubutton_clicked" Margin="40,10" BackgroundColor="#385485" TextColor="#FFFFFF" FontSize="18" FontAttributes="Bold" />
+                <Button Text="SUCCESS" Clicked="successbutton_clicked" Margin="40,10" BackgroundColor="#FC2E5B" TextColor="#FFFFFF" FontSize="18" FontAttributes="Bold" />
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
